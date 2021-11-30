@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* FONDOS */
+/* TIPOGRAFÍA */
+/* FONDOS */
+/* TIPOGRAFÍA */
+.textoBanda {
+  font-size: 22px;
+  color: yellow; }
+
+/* FONDOS */
+/* TIPOGRAFÍA */
+.fondoGrey {
+  background-color: Grey; }
+
+.fondoBlue {
+  background-color: Blue; }
+
+/* RESETEO */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px; }
+
+/* BODY */
+body {
+  background-color: black;
+  font-family: "Nunito", sans-serif;
+  color: white; }
+
+/* TÍTULOS H */
+h1 {
+  color: #EFD9CE;
+  display: none; }
+
+h2 {
+  color: #EFD9CE;
+  margin-left: 25px;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 25px; }
+
+h3 {
+  margin-left: 25px;
+  border: solid white 1px;
+  display: inline;
+  background-color: #545158;
+  padding: 5px;
+  font-size: 16px; }
+  h3 a {
+    color: white;
+    text-decoration: none; }
+
+h3:hover a {
+  color: #EFD9CE; }
+
+/* BOTONERA NAVEGABLE */
+header {
+  grid-area: header;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
+  header ul {
+    font-weight: bold;
+    font-size: 17px; }
+    header ul li {
+      margin-right: 7px; }
+
+.logoHeader {
+  width: 180px;
+  margin-left: 20px; }
+
+.nav-item:hover {
+  transform: scale(1.1); }
+
+.nav-item:hover ul {
+  display: block;
+  background-color: #72A8B0;
+  width: 140px;
+  padding: 5px; }
+
+/* ELEMENTOS HOME */
+.gridHome {
+  display: grid;
+  grid-template-areas: 'header header' 'slider slider' 'recuadroUno recuadroDos' 'footer footer'; }
+
+.slider {
+  grid-area: slider; }
+
+.recuadroUno {
+  grid-area: recuadroUno;
+  background-color: grey;
+  padding-top: 20px;
+  text-align: center; }
+
+.recuadroDos {
+  grid-area: recuadroDos;
+  background-color: #545158;
+  padding-top: 20px;
+  text-align: center; }
+
+.titulosRecuadros {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.textosRecuadros {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+  .textosRecuadros a {
+    color: white; }
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between; }
+  footer .logoFooter {
+    width: 120px; }
+
+/* SECCIÓN LA BANDA */
+.imagenBanda {
+  margin: 25px; }
+
+.textoBanda {
+  margin: 25px;
+  margin-top: 10px;
+  /* font-size: 16px; */ }
+
+/* CONTAINERS */
+.container {
+  /* background-color:$colorFondoSecundario;
+    background-image: linear-gradient(to left, $colorFondoSecundario, $colorFondoPrincipal, $colorFondoPrincipal); */
+  border-left: solid #EFD9CE 20px;
+  margin-left: 25px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+/* SECCIÓN INTEGRANTES */
+.nombreBio {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: -10px;
+  margin-left: 2px; }
+
+.text-muted {
+  margin-left: 2px;
+  padding: 0px;
+  margin-top: 5px; }
+
+.botoneraFotos {
+  display: flex;
+  justify-content: left;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  margin-top: 25px; }
+
+.fotoBotonera {
+  background-color: #72A8B0;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px; }
+  .fotoBotonera a {
+    color: white;
+    text-decoration: none; }
+
+.fotoBotonera:hover {
+  background-color: #72A8B0;
+  opacity: 70%; }
+
+/* SECCIÓN DISCOGRAFÍA */
+.discografiaMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 25px; }
+  .discografiaMain .discografia {
+    width: 230px;
+    height: 230px;
+    margin: 25px; }
+    .discografiaMain .discografia .tapasDiscos {
+      height: 220px;
+      width: 220px;
+      margin-bottom: 10px; }
+
+.tapasDiscos:hover {
+  transform: rotate(10deg); }
+
+/* SECCIÓN GALERÍA */
+.galeriaGrid {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: 300px 300px 200px;
+  gap: 10px;
+  margin: 25px;
+  grid-template-areas: 'fotoGaleria1 fotoGaleria1 fotoGaleria1 fotoGaleria5' 'fotoGaleria2 fotoGaleria3 fotoGaleria4 fotoGaleria5' 'fotoGaleria6 fotoGaleria6 fotoGaleria6 fotoGaleria6'; }
+
+.fotoGaleria1 {
+  background-color: blueviolet;
+  grid-area: fotoGaleria1; }
+
+.fotoGaleria1:hover {
+  transform: translate(20px, 50px); }
+
+.fotoGaleria2 {
+  background-color: green;
+  grid-area: fotoGaleria2; }
+
+.fotoGaleria2:hover {
+  transform: scale(1.5);
+  margin-left: 50px; }
+
+.fotoGaleria3 {
+  background-color: grey;
+  grid-area: fotoGaleria3; }
+
+.fotoGaleria3:hover {
+  transform: translate(20px, 50px); }
+
+.fotoGaleria4 {
+  background-color: hotpink;
+  grid-area: fotoGaleria4; }
+
+.fotoGaleria4:hover {
+  transform: translate(20px, 50px); }
+
+.fotoGaleria5 {
+  background-color: blue;
+  grid-area: fotoGaleria5; }
+
+.fotoGaleria5:hover {
+  transform: translate(20px, 50px); }
+
+.fotoGaleria6 {
+  background-color: orange;
+  grid-area: fotoGaleria6; }
+
+.fotoGaleria6:hover {
+  transform: translate(20px, 50px); }
+
+/* ERROR 404 */
+#error404 {
+  background-color: #dddbdb; }
+  #error404 section {
+    display: inline-block;
+    justify-content: center; }
+    #error404 section div {
+      color: black;
+      margin-left: 50px;
+      justify-content: center; }
+      #error404 section div p {
+        font-family: "Nunito", sans-serif;
+        text-align: center;
+        margin-bottom: 2px; }
+
+section {
+  justify-content: center; }
+
+.tituloError {
+  font-weight: bold;
+  font-size: 50px;
+  border: solid 2px black; }
+
+.textoError {
+  font-size: 25px; }
+
+/* MEDIA QUERIES */
+/* Escritorio */
+@media only screen and (min-width: 768px) {
+  .gridHome {
+    display: grid;
+    grid-template-areas: 'header header' 'slider slider' 'recuadroUno recuadroDos' 'footer footer'; } }
+
+/* Tablet */
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+  .gridHome {
+    display: grid;
+    grid-template-areas: 'header header' 'slider slider' 'recuadroUno recuadroDos' 'footer footer'; }
+  ul {
+    font-size: small;
+    margin-top: 5px; }
+    ul li {
+      margin-left: 20px; }
+  .logoHeader {
+    width: 150px;
+    margin-top: 10px; }
+  .slider {
+    width: auto; }
+  iframe {
+    width: 250px; }
+  .titulosRecuadros {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 0px; }
+  .textosRecuadros {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 0px; } }
+
+/* Mobile */
+@media only screen and (max-width: 320px) {
+  .gridHome {
+    display: grid;
+    grid-template-areas: 'header' 'slider' 'recuadroUno' 'recuadroDos'  'footer'; }
+  ul {
+    font-size: x-small;
+    margin-top: 5px; }
+  .logoHeader {
+    width: 80px;
+    margin-top: 10px; }
+  iframe {
+    width: 250px; }
+  .titulosRecuadros {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 0px; }
+  .textosRecuadros {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 0px; } }

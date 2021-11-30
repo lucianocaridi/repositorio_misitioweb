@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+@mixin fuente ($tamanioFuente){
+    font-size: $tamanioFuente;
+} 
+@mixin colorFuente ($colorFuente){
+    color: $colorFuente;    
+}
+.textoBanda {
+    @include fuente (22px);
+    @include colorFuente ($colorFuenteTerciario);
+}
