@@ -15,6 +15,7 @@
 </head>
 <body>
     <h1>QUEEN - Home</h1>
+    <!--Menú navegable - botonera-->
     <div class="gridHome">
         <header>
             <div class="container-fluid">
@@ -32,14 +33,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="./pages/labanda.html">LA BANDA</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="./pages/integrantes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">INTEGRANTES</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="./pages/integrantes.html #bioFreddieMercury">Freddie Mercury</a></li>
-                                        <li><a class="dropdown-item" href="./pages/integrantes.html #bioBrianMay">Brian May</a></li>
-                                        <li><a class="dropdown-item" href="./pages/integrantes.html #bioRogerTaylor">Roger Taylor</a></li>
-                                        <li><a class="dropdown-item" href="./pages/integrantes.html #bioJohnDeacon">John Deacon</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./pages/integrantes.html">INTEGRANTES</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="./pages/discografia.html">DISCOGRAFÍA</a>
@@ -53,47 +48,49 @@
                 </nav>
             </div>
         </header>
+        <!--Slider-->
         <main class="slider">
-            <section class="container-fluid">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                             <img src="./media/imagenes/fotoSlider1.png" class="d-block w-100" alt="fotoQueen">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/imagenes/fotoSlider2.png" class="d-block w-100" alt="fotoQueen">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/imagenes/fotoSlider3.png" class="d-block w-100" alt="fotoQueen">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/imagenes/fotoSlider4.png" class="d-block w-100" alt="fotoQueen">
-                        </div>
+                    <div class="carousel-item active">
+                        <img src="./media/imagenes/fotoSlider1.png" class="d-block w-75 mx-auto img-fluid" alt="fotoQueen">
                     </div>
+                    <div class="carousel-item">
+                        <img src="./media/imagenes/fotoSlider2.png" class="d-block w-75 mx-auto img-fluid" alt="fotoQueen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/imagenes/fotoSlider3.png" class="d-block w-75 mx-auto img-fluid" alt="fotoQueen">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </section>
         </main>
-            <div class="recuadroUno">
+        <!--Recuadros Home-->
+            <div class="recuadroUno mx-auto">
                 <p class="titulosRecuadros">QUEEN - LA HISTORIA</p>
-                    <div class="video1">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ujvygsXWkzY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    </div>
-                <p class="textosRecuadros"><a href="./pages/labanda.html" target= "blank" class="masInfo">Más información</a></p>
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/ujvygsXWkzY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p class="textosRecuadros"><a href="./pages/labanda.html" target= "blank" class="masInfo">+ información</a></p>
             </div>
-            <div class="recuadroDos">
-                    <p class="titulosRecuadros">QUEEN - GREATEST LIVE PERFORMANCES</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SbWLWNXsVxA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                    <p class="textosRecuadros"><a href="https://www.youtube.com/c/queen/videos" target= "blank" class="masInfo">Más videos</a></p>
+            <div class="recuadroDos mx-auto">
+                <p class="titulosRecuadros">QUEEN - GREATEST LIVE PERFORMANCES</p>
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/SbWLWNXsVxA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                <p class="textosRecuadros"><a href="https://www.youtube.com/c/queen/videos" target= "blank" class="masInfo">+ videos</a></p>
             </div>
+        <!--Footer-->
         <footer>
-            <div><a href="https://www.instagram.com/officialqueenmusic/?hl=es" target="blank"><img src="./media/imagenes/logoInstagram.png" alt="logoInstagram"></a></div>
+            <div><a href="https://www.instagram.com/officialqueenmusic/?hl=es" target="blank"><img class="logoInstagram" src="./media/imagenes/logoInstagram.png" alt="logoInstagram"></a></div>
             <div><a href="./index.html"><img class="logoFooter" src="./media/imagenes/logoQueen.png" alt="logoQueen"></a></div>
         </footer>
     </div>    

@@ -1,7 +1,0 @@
-@import 'variables.scss';
-
-@each $color in Grey, Blue {
-    .fondo#{$color}{
-        background-color: #{$color};
-    }
-}

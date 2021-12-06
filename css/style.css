@@ -1,20 +1,6 @@
 @charset "UTF-8";
 /* FONDOS */
 /* TIPOGRAFÍA */
-/* FONDOS */
-/* TIPOGRAFÍA */
-.textoBanda {
-  font-size: 22px;
-  color: red; }
-
-/* FONDOS */
-/* TIPOGRAFÍA */
-.fondoGrey {
-  background-color: Grey; }
-
-.fondoBlue {
-  background-color: Blue; }
-
 /* RESETEO */
 * {
   margin: 0px;
@@ -23,7 +9,7 @@
 
 /* BODY */
 body {
-  background-color: blue;
+  background-image: url(../media/imagenes/fondoOscuro1.jpg);
   font-family: "Nunito", sans-serif;
   color: white; }
 
@@ -34,29 +20,34 @@ h1 {
 
 h2 {
   color: #EFD9CE;
-  margin-left: 25px;
+  margin-bottom: 20px;
   padding-top: 20px;
   font-weight: bold;
-  font-size: 25px; }
+  font-size: 30px;
+  text-align: center; }
 
 h3 {
-  margin-left: 25px;
-  border: solid white 1px;
+  border: solid white 2px;
   display: inline;
   background-color: #545158;
   padding: 5px;
   font-size: 16px; }
   h3 a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
 
 h3:hover a {
   color: #EFD9CE; }
 
+.volverHome {
+  text-align: center;
+  padding-top: 10px; }
+
 /* BOTONERA NAVEGABLE */
 header {
   grid-area: header;
-  background-color: blue;
+  background-image: url(../media/imagenes/fondoOscuro1.jpg);
   position: sticky;
   top: 0px;
   z-index: 1; }
@@ -64,7 +55,8 @@ header {
     font-weight: bold;
     font-size: 17px; }
     header ul li {
-      margin-right: 7px; }
+      margin-right: 7px;
+      margin-bottom: 5px; }
 
 .logoHeader {
   width: 180px;
@@ -73,11 +65,19 @@ header {
 .nav-item:hover {
   transform: scale(1.1); }
 
-.nav-item:hover ul {
-  display: block;
-  background-color: #72A8B0;
-  width: 140px;
-  padding: 5px; }
+/* FOOTER */
+footer {
+  grid-area: footer;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../media/imagenes/fondoOscuro1.jpg); }
+  footer .logoFooter {
+    width: 120px; }
+
+.logoInstagram {
+  margin-left: 15px; }
 
 /* ELEMENTOS HOME */
 .gridHome {
@@ -89,15 +89,19 @@ header {
 
 .recuadroUno {
   grid-area: recuadroUno;
-  background-color: grey;
-  padding-top: 20px;
-  text-align: center; }
+  background-image: url(../media/imagenes/fondoOscuro2.jpg);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 75%; }
 
 .recuadroDos {
   grid-area: recuadroDos;
-  background-color: #545158;
-  padding-top: 20px;
-  text-align: center; }
+  background-image: url(../media/imagenes/fondoOscuro2.jpg);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 75%; }
 
 .titulosRecuadros {
   font-size: 18px;
@@ -114,65 +118,68 @@ header {
   .textosRecuadros a {
     color: white; }
 
-/* FOOTER */
-footer {
-  grid-area: footer;
-  display: flex;
-  padding: 20px;
-  align-items: center;
-  justify-content: space-between; }
-  footer .logoFooter {
-    width: 120px; }
+/* CONTAINER */
+.container {
+  background-image: url(../media/imagenes/fondoOscuro2.jpg);
+  padding: 0px; }
 
 /* SECCIÓN LA BANDA */
 .imagenBanda {
-  margin: 25px; }
+  margin: 20px; }
 
 .textoBanda {
-  margin: 25px;
-  margin-top: 10px;
-  /* font-size: 16px; */ }
-
-/* CONTAINERS */
-.container {
-  /* background-color:$colorFondoSecundario;
-    background-image: linear-gradient(to left, $colorFondoSecundario, $colorFondoPrincipal, $colorFondoPrincipal); */
-  border-left: solid #EFD9CE 20px;
-  margin-left: 25px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 20px; }
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  font-size: 20px; }
 
 /* SECCIÓN INTEGRANTES */
 .nombreBio {
   font-weight: bold;
   font-size: 30px;
   margin-bottom: -10px;
-  margin-left: 2px; }
+  padding-top: 20px; }
 
 .text-muted {
-  margin-left: 2px;
-  padding: 0px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  font-size: 18px; }
+
+.textoBio {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px; }
+  .textoBio a {
+    background-color: #72A8B0;
+    padding: 5px;
+    color: white;
+    font-size: 16px; }
+
+.bios {
+  border-left: solid 30px #EFD9CE; }
 
 .botoneraFotos {
   display: flex;
-  justify-content: left;
-  margin-left: 25px;
+  justify-content: space-evenly;
   margin-bottom: 50px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  padding-bottom: 25px;
+  padding-top: 15px; }
+  .botoneraFotos p {
+    margin-top: 5px;
+    font-weight: bold; }
 
 .fotoBotonera {
-  background-color: #72A8B0;
+  background-image: url(../media/imagenes/fondoOscuro2.jpg);
   width: 200px;
   height: 200px;
-  margin-right: 10px; }
+  margin: 10px; }
   .fotoBotonera a {
     color: white;
     text-decoration: none; }
 
 .fotoBotonera:hover {
-  background-color: #72A8B0;
+  background-image: url(../media/imagenes/fondoOscuro2.jpg);
   opacity: 70%; }
 
 /* SECCIÓN DISCOGRAFÍA */
@@ -180,96 +187,54 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px; }
   .discografiaMain .discografia {
-    width: 230px;
-    height: 230px;
+    width: 235px;
+    height: 235px;
     margin: 25px; }
+    .discografiaMain .discografia a {
+      text-decoration: none;
+      color: white;
+      text-align: center; }
     .discografiaMain .discografia .tapasDiscos {
       height: 220px;
       width: 220px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      border: solid 2px #EFD9CE; }
 
 .tapasDiscos:hover {
-  transform: rotate(10deg); }
+  transform: rotate(10deg);
+  opacity: 70%; }
 
 /* SECCIÓN GALERÍA */
 .galeriaGrid {
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-template-rows: 300px 300px 200px;
-  gap: 10px;
+  grid-template-columns: 6fr 6fr;
+  grid-template-rows: 33% 33% 33%;
+  gap: 30px;
   margin: 25px;
-  grid-template-areas: 'fotoGaleria1 fotoGaleria1 fotoGaleria1 fotoGaleria5' 'fotoGaleria2 fotoGaleria3 fotoGaleria4 fotoGaleria5' 'fotoGaleria6 fotoGaleria6 fotoGaleria6 fotoGaleria6'; }
+  padding: 35px;
+  grid-template-areas: 'fotoGaleria1 fotoGaleria2' 'fotoGaleria3 fotoGaleria4' 'fotoGaleria5 fotoGaleria6'; }
 
 .fotoGaleria1 {
-  background-color: blueviolet;
   grid-area: fotoGaleria1; }
 
-.fotoGaleria1:hover {
-  transform: translate(20px, 50px); }
-
 .fotoGaleria2 {
-  background-color: green;
   grid-area: fotoGaleria2; }
 
-.fotoGaleria2:hover {
-  transform: scale(1.5);
-  margin-left: 50px; }
-
 .fotoGaleria3 {
-  background-color: grey;
   grid-area: fotoGaleria3; }
 
-.fotoGaleria3:hover {
-  transform: translate(20px, 50px); }
-
 .fotoGaleria4 {
-  background-color: hotpink;
   grid-area: fotoGaleria4; }
 
-.fotoGaleria4:hover {
-  transform: translate(20px, 50px); }
-
 .fotoGaleria5 {
-  background-color: blue;
   grid-area: fotoGaleria5; }
 
-.fotoGaleria5:hover {
-  transform: translate(20px, 50px); }
-
 .fotoGaleria6 {
-  background-color: orange;
   grid-area: fotoGaleria6; }
-
-.fotoGaleria6:hover {
-  transform: translate(20px, 50px); }
-
-/* ERROR 404 */
-#error404 {
-  background-color: #dddbdb; }
-  #error404 section {
-    display: inline-block;
-    justify-content: center; }
-    #error404 section div {
-      color: black;
-      margin-left: 50px;
-      justify-content: center; }
-      #error404 section div p {
-        font-family: "Nunito", sans-serif;
-        text-align: center;
-        margin-bottom: 2px; }
-
-section {
-  justify-content: center; }
-
-.tituloError {
-  font-weight: bold;
-  font-size: 50px;
-  border: solid 2px black; }
-
-.textoError {
-  font-size: 25px; }
 
 /* MEDIA QUERIES */
 /* Escritorio */
@@ -282,7 +247,7 @@ section {
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   .gridHome {
     display: grid;
-    grid-template-areas: 'header header' 'slider slider' 'recuadroUno recuadroDos' 'footer footer'; }
+    grid-template-areas: 'header' 'slider ' 'recuadroUno' 'recuadroDos' 'footer'; }
   ul {
     font-size: small;
     margin-top: 5px; }
@@ -291,10 +256,14 @@ section {
   .logoHeader {
     width: 150px;
     margin-top: 10px; }
-  .slider {
-    width: auto; }
   iframe {
     width: 250px; }
+  .recuadroUno {
+    margin-top: 10px;
+    width: 75%; }
+  .recuadroDos {
+    margin-top: 0px;
+    width: 75%; }
   .titulosRecuadros {
     font-size: 12px;
     font-weight: bold;
@@ -306,13 +275,23 @@ section {
     font-weight: bold;
     margin-top: 5px;
     text-align: center;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .volverHome {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .discografiaMain {
+    justify-content: center; } }
 
 /* Mobile */
 @media only screen and (max-width: 320px) {
   .gridHome {
     display: grid;
     grid-template-areas: 'header' 'slider' 'recuadroUno' 'recuadroDos'  'footer'; }
+  .recuadroUno {
+    width: 100%;
+    margin-bottom: -15px; }
+  .recuadroDos {
+    width: 100%; }
   ul {
     font-size: x-small;
     margin-top: 5px; }
@@ -332,4 +311,17 @@ section {
     font-weight: bold;
     margin-top: 5px;
     text-align: center;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .galeriaGrid {
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    grid-template-areas: 'fotoGaleria1' 'fotoGaleria2' 'fotoGaleria3'  'fotoGaleria4' 'fotoGaleria5' 'fotoGaleria6'; }
+  .volverHome {
+    margin-top: 250px;
+    margin-bottom: 50px; }
+  .discografiaMain {
+    justify-content: center; } }
