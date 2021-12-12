@@ -263,6 +263,29 @@ footer {
     grid-area: fotoGaleria6;
 }
 
+/* ERROR 404 */
+.error404 {
+    display: inline;    
+    background-image: none;
+    background-color: #EFD9CE;
+    .container {
+        background-image: none;
+        color:black;
+    }
+}
+.tituloError {
+    font-family: $fuentePrincipal;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top:-55px;
+    margin-bottom: -10px;
+}
+.bajadaError {
+    font-family: $fuentePrincipal;
+    font-size: 25px;
+    font-style: italic;
+}
+
 /* MEDIA QUERIES */
 
 /* Escritorio */
@@ -273,7 +296,7 @@ footer {
                              'slider slider'
                              'recuadroUno recuadroDos'
                              'footer footer';       
-    }
+    }    
 }
     
 /* Tablet */
@@ -396,5 +419,17 @@ footer {
     }
     .discografiaMain {
         justify-content: center;
+    }
+    .tituloError {
+        font-family: $fuentePrincipal;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top:-55px;
+        margin-bottom: -10px;
+    }
+    .bajadaError {
+        font-family: $fuentePrincipal;
+        font-size: 20px;
+        font-style: italic;
     }
 }

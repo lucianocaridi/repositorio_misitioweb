@@ -236,6 +236,27 @@ footer {
 .fotoGaleria6 {
   grid-area: fotoGaleria6; }
 
+/* ERROR 404 */
+.error404 {
+  display: inline;
+  background-image: none;
+  background-color: #EFD9CE; }
+  .error404 .container {
+    background-image: none;
+    color: black; }
+
+.tituloError {
+  font-family: "Nunito", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: -55px;
+  margin-bottom: -10px; }
+
+.bajadaError {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-style: italic; }
+
 /* MEDIA QUERIES */
 /* Escritorio */
 @media only screen and (min-width: 768px) {
@@ -324,4 +345,14 @@ footer {
     margin-top: 250px;
     margin-bottom: 50px; }
   .discografiaMain {
-    justify-content: center; } }
+    justify-content: center; }
+  .tituloError {
+    font-family: "Nunito", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -55px;
+    margin-bottom: -10px; }
+  .bajadaError {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-style: italic; } }
